@@ -19,7 +19,7 @@
       	tmp=th.attr('href')
      	tContent.not($(tmp.slice(tmp.indexOf('#'))).fadeIn(1000)).hide()
 	 	$(th).parent().addClass('selected').siblings().removeClass('selected').find('span').stop().animate({opacity:'0'},600);
-	 	Cufon.refresh();
+	 	//Cufon.refresh();
     	return false;
     });
    });

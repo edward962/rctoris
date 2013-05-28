@@ -4,6 +4,11 @@ article,aside,audio,canvas,command,datalist,details,embed,figcaption,figure,foot
   display: block
 }
 
+#menu a,footer,h2,.button1,.date,.tabs .nav li a,.wrapper p {
+  font-family: "Ubuntu", sans-serif;
+  hover: true;
+}
+
 mark,rp,rt,ruby,summary,time {
   display: inline
 }
@@ -20,12 +25,13 @@ mark,rp,rt,ruby,summary,time {
   width: 100%;
   overflow: hidden
 }
+
 /* Global properties ======================================================== */
 body {
   background: #000;
   border: 0;
-  font: 14px Arial, Helvetica, sans-serif;
-  color: #808080;
+  font: 11px "Ubuntu", sans-serif;
+  color: #ddd;
   line-height: 20px;
   min-width: 1100px;
   overflow: hidden
@@ -115,8 +121,9 @@ body,html {
 
 .pagination a {
   display: inline-block;
-  width: 35px;
   height: 35px;
+  padding-left: 5px;
+  padding-right: 5px;
   color: #000;
   text-align: center;
   text-decoration: none;
@@ -131,9 +138,10 @@ body,html {
 }
 /* ============================= main layout ====================== */
 a {
-  color: #808080;
+  color: #dfdfdf;
   text-decoration: underline;
-  outline: none
+  outline: none;
+  font-weight: 800;
 }
 
 a:hover {
@@ -157,12 +165,96 @@ h2 {
 }
 
 p {
-  padding-bottom: 20px
+  padding-bottom: 20px;
 }
+
+hr.style-eight {
+  padding: 0;
+  border: none;
+  border-top: medium double #ddd;
+  color: #ddd;
+  text-align: center;
+}
+
+hr.style-eight:after {
+  content: "§";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: none;
+}
+
+hr.style-one {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
+.cv h1 {
+  color: #ddd;
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 26px;
+}
+
+.cv h2 {
+  color: #ddd;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.cv h3 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.cv h4 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+
+.cv ul {
+  list-style: disc outside;
+  padding-left: 20px;
+}
+
+.cv li {
+  padding-left: 0px;
+}
+
+.cv td {
+  margin: 0;
+  padding: 0 0 0 15px;
+  text-align: left;
+}
+
 /* ============================= header ====================== */
 header {
   width: 360px;
   float: left
+}
+
+header a {
+  text-decoration: none;
 }
 
 #logo {
@@ -221,6 +313,11 @@ header {
   
 }
 /* ============================= content ====================== */
+.project_title {
+  font-weight: 800;
+  color: #fff;
+}
+
 #content {
   height: 868px;
   width: 740px;
@@ -412,7 +509,8 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fff
+  background: #fff;
+  color: #000;
 }
 
 .tabs .nav li a strong {
@@ -550,56 +648,4 @@ footer a:hover {
   width: 740px;
   float: left;
   text-align: center
-}
-
-/* ============================= forms ============================= */
-#ContactForm {
-  margin-top: -2px
-}
-
-#ContactForm .wrapper {
-  overflow: inherit;
-  min-height: 30px
-}
-
-#ContactForm span {
-  float: left;
-  width: 75px;
-  color: #fff;
-  padding-top: 2px
-}
-
-#ContactForm a {
-  margin-right: 10px;
-  float: left;
-  margin-top: 23px;
-  width: 112px;
-  text-align: center
-}
-
-#ContactForm a span {
-  width: 100%
-}
-
-#ContactForm .input {
-  float: left;
-  margin: 0;
-  width: 525px;
-  height: 16px;
-  background: #fff;
-  padding: 4px 10px;
-  color: #808080;
-  font: 14px "Trebuchet MS", Arial, Helvetica, sans-serif
-}
-
-#ContactForm textarea {
-  overflow: auto;
-  margin: 0;
-  float: left;
-  width: 525px;
-  height: 289px;
-  background: #fff;
-  padding: 4px 10px;
-  color: #808080;
-  font: 14px "Trebuchet MS", Arial, Helvetica, sans-serif
 }

@@ -44,12 +44,12 @@ $(window).load(function() {
 	function open_page(page){
 		location.hash='#!/'+page.slice(1);
 		$('#menu a').removeClass('active').find(' > span').stop().animate({opacity:'0'},600);
-		Cufon.replace('#menu a', { fontFamily: 'Ubuntu', hover:true });
+		//Cufon.replace('#menu a', { fontFamily: 'Ubuntu', hover:true });
 		num=$(page).data('num');
 		$('#menu > li').each(function(){					  
 			if ($(this).data('num')==num) {
 				$(this).find('> a').addClass('active').find('> span').stop().animate({opacity:'1'},600);
-				Cufon.replace('#menu a', { fontFamily: 'Ubuntu', hover:true });
+				//Cufon.replace('#menu a', { fontFamily: 'Ubuntu', hover:true });
 			}
 		})
 		fl=false;
@@ -69,7 +69,7 @@ $(window).load(function() {
 	}
 	function close_page(page){
 		$('#menu a').removeClass('active').find(' > span').stop().animate({opacity:'0'},600);
-		Cufon.replace('#menu a', { fontFamily: 'Ubuntu', hover:true });
+		//Cufon.replace('#menu a', { fontFamily: 'Ubuntu', hover:true });
 		location.hash='#';
 		$(act).find('.box1').stop().animate({height:'0'},700,'easeOutCirc', function(){
 			$(act).css({display:'none'});
