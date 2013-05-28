@@ -164,6 +164,13 @@ h2 {
   font-weight: 700
 }
 
+h3 {
+  font-size: 18px;
+  line-height: 1.2em;
+  padding: 17px 0 20px 0;
+  color: #fff;
+  font-weight: 700
+}
 p {
   padding-bottom: 20px;
 }
@@ -232,16 +239,16 @@ hr.style-one {
   padding: 0;
 }
 
-.cv ul {
+.cv ul, .software ul, .research ul {
   list-style: disc outside;
   padding-left: 20px;
 }
 
-.cv li {
+.cv li, .software li, .research li {
   padding-left: 0px;
 }
 
-.cv td {
+.cv td, .software td, .research td {
   margin: 0;
   padding: 0 0 0 15px;
   text-align: left;
@@ -316,6 +323,7 @@ header a {
 .project_title {
   font-weight: 800;
   color: #fff;
+  font-size: 14px;
 }
 
 #content {
