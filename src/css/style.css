@@ -1494,7 +1494,7 @@ header a {
 
 .tabs .nav li a {
   position: relative;
-  font-size: 16px;
+  font-size: 12px;
   letter-spacing: -1px;
   text-transform: uppercase;
   text-decoration: none;
@@ -1509,6 +1509,7 @@ header a {
 .tabs .nav li a span {
   display: block;
   position: absolute;
+  padding: 0 39px 0 9px;
   top: 0;
   left: 0;
   width: 100%;

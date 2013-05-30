@@ -96,6 +96,8 @@ module.exports = function(grunt) {
         files: {
           '../build/images/photos/photo1.jpg': '../src/images/photos/photo1.jpg',
           '../build/images/photos/photo2.jpg': '../src/images/photos/photo2.jpg',
+          '../build/images/photos/photo3.jpg': '../src/images/photos/photo3.jpg',
+          '../build/images/photos/photo4.jpg': '../src/images/photos/photo4.jpg',
           '../build/images/prettyPhoto/dark_rounded/btnNext.png': '../src/images/prettyPhoto/dark_rounded/btnNext.png',
           '../build/images/prettyPhoto/dark_rounded/btnPrevious.png': '../src/images/prettyPhoto/dark_rounded/btnPrevious.png',
           '../build/images/prettyPhoto/dark_rounded/contentPattern.png': '../src/images/prettyPhoto/dark_rounded/contentPattern.png',
