@@ -177,7 +177,7 @@ $pp_pic_holder.attr('class','pp_pic_holder '+settings.theme);$pp_overlay.css({'o
 								// pags.each(function(i){
 								// opt.images.push($('a',this).attr('href'))
 								// })
-								for ( var i = 1; i <= 4; i++) {
+								for ( var i = 1; i <= 12; i++) {
 									opt.images.push('images/photos/photo' + i
 											+ '.jpg');
 								}
